@@ -1,5 +1,5 @@
 
-// On Click hand emoji will take you to the top of the page
+
 document.getElementById('top-button').addEventListener('click',function(){
     window.scrollTo(0,0);
 });
@@ -13,17 +13,9 @@ $(window).scroll(function(){
     $("#top-button").hide();
   }
 });
-
-
-
-
-// Toggle between DAy and Night Mode
 $('#switch1').on('click', function(){
   $('body').toggleClass('night')
 })
-
-
-// If user visit after 7 pm in night the body will change the style to night class
 $(document).ready(function(){
   var date = new Date();
   var current_time = date.getHours();
@@ -38,9 +30,6 @@ $(document).ready(function(){
 $(window).load(function() {
       $("#top-button").hide();
 });
-
-
-// If you hover over the languages I used in project Box it will do fade in animation
 $('.project_used span').on({
     mouseover: function() {
         event.preventDefault();
